@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="miestilodos.css">
+    <title>Automarket</title>
+</head>
+<html>
+
+<body>
+
+
+    <style>
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            position: fixed;
+        }
+        
+        li {
+            margin: 0 .75rem;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: inline-flexbox;
+            color: rgb(228, 216, 216);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li b {
+            display: inline-flexbox;
+            text-align: end;
+            padding: 10px 12px;
+        }
+        
+        .active {
+            background-color: rgb(10, 10, 202);
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        h1 {
+            color: rgb(240, 233, 233);
+            font-size: xx-large;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 1px 1px rgba(231, 205, 205, 0.973), -1px -1px #333;
+            font-style: italic;
+            font-weight: lighter;
+        }
+        
+        h2 {
+            color: rgb(240, 233, 233);
+            font-size: larger;
+            text-align: justify;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: #333;
+            margin: 10px;
+        }
+        
+        .carrusel {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            background-color: black;
+        }
+        
+        .carrusel ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            max-width: 1030px;
+            /* max-width: 510px; */
+            scroll-behavior: smooth;
+            background-color: black;
+        }
+        
+        .carrusel-fotos {
+            display: flex;
+            gap: 10px;
+            overflow: auto;
+            background-color: black;
+        }
+        
+        .carrusel-fotos img {
+            background: black;
+            border: 4px solid black;
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+        }
+        
+        .carrusel-menu {
+            display: none;
+            background-color: black;
+        }
+        
+        @media screen and (min-width: 300px) {
+            .carrusel-fotos {
+                overflow: hidden;
+                background-color: #111;
+            }
+            .carrusel-fotos img {
+                width: 275px;
+                height: 275px;
+                background-color: black;
+            }
+            .carrusel-menu {
+                display: inline-block;
+                background-color: black;
+            }
+            .carrusel-menu img {
+                box-sizing: border-box;
+                width: 50px;
+                height: 50px;
+                border: 10px solid black;
+            }
+            .carrusel-menu img:hover {
+                background-color: black;
+            }
+        }
+        
+        .ultimo {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+        }
+        
+        .par {
+            color: white;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .promo {
+            text-align: center;
+            font-size: x-large;
+            color: antiquewhite;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 5%;
+            text-shadow: 7px 4px 5px blue;
+        }
+        
+        img.imgbbva {
+            position: relative;
+            margin-top: auto;
+            height: 125px;
+            width: 125px;
+            background-color: black;
+        }
+        
+        .bbva {
+            background-color: black;
+            position: relative;
+            font-size: medium;
+            color: aliceblue;
+            text-align: center;
+            text-decoration: solid;
+            text-decoration: dotted;
+        }
+        
+        img.imgsantander {
+            position: relative;
+            margin-top: auto;
+            height: 125px;
+            width: 125px;
+        }
+        
+        img.imggalicia {
+            position: relative;
+            margin-top: auto;
+            height: 125px;
+            width: 125px;
+        }
+        
+        img.logo {
+            margin-top: auto;
+            background-color: #111;
+        }
+    </style>
+
+
+
+    <ul class="menu">
+        <li><a href="#">Pagina Principal</a></li>
+        <li><a href="#">Categorias de vehiculos</a></li>
+        <li><a href="#">Promociones</a></li>
+        <li><a href="#">Sucursales</a></li>
+        <li><a href="#">Calcula tu tarifa</a></li>
+        <li><a href="#">Quienes somos</a></li>
+        <li>
+            <b href=""><input type="search" name="busquedavehiculo" placeholder="vehiculo,marca,tipo..."><input type="submit" value="Buscar"></a>
+        </li>
+    </ul>
+    <header>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+    <h1>Bienvenido a Automarket</h1>
+    <center><img src="logobb.jpg" alt="logodos" class="logo"></center>
+    
+
+        <div>  
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2>Nuevos ingresos del mes de Junio, conoce mas <a href=”url”>aqui.</a></h2>
+
+        </div>
+<br>
+
+<br>
+
+<br>
+<div class="carrusel">
+    <ul class="carrusel-fotos">
+      <li id="foto1"><img src="autoa.jpg" alt=""></li>
+      <li id="foto2"><img src="autob.jpg" alt=""></li>
+      <li id="foto3"><img src="autoc.jpg" alt=""></li>
+      <li id="foto4"><img src="auto4.jpg" alt=""></li>
+      <li id="foto5"><img src="imagen5.jpg" alt=""></li>
+      <li id="foto6"><img src="imagen6.jpg" alt=""></li>
+      <li id="foto7"><img src="auto7.jpg" alt=""></li>
+      <li id="foto8"><img src="auto8.jpg" alt=""></li>
+      <li id="foto9"><img src="auto9.jpg" alt=""></li>
+      <li id="foto10"><img src="auto10.jpg" alt=""></li>
+      <li id="foto11"><img src="fiatuno.jpg" alt=""></li>
+      <li id="foto12"><img src="fiatdos.jpg" alt=""></li>
+    </ul>
+    <ul class="carrusel-menu">
+      <li><a href="#foto1"><img src="autoa.jpg" alt=""></a></li>
+      <li><a href="#foto2"><img src="autob.jpg" alt=""></a></li>
+      <li><a href="#foto3"><img src="autoc.jpg" alt=""></a></li>
+      <li><a href="#foto4"><img src="auto4.jpg" alt=""></a></li>
+      <li><a href="#foto5"><img src="imagen5.jpg" alt=""></a></li>
+      <li><a href="#foto6"><img src="imagen6.jpg" alt=""></a></li>
+      <li><a href="#foto7"><img src="auto7.jpg" alt=""></a></li>
+      <li><a href="#foto8"><img src="auto8.jpg" alt=""></a></li>
+      <li><a href="#foto9"><img src="auto9.jpg" alt=""></a></li>
+      <li><a href="#foto10"><img src="auto10.jpg" alt=""></a></li>
+      <li><a href="#foto11"><img src="fiatuno.jpg" alt=""></a></li>
+      <li><a href="#foto12"><img src="fiatdos.jpg" alt=""></a></li>
+    </ul>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section>
+
+    <h3 class="promo">Algunas de nuestras promociones vigentes</h3>
+    <br>
+    <br>
+
+<div class="bbva">
+    <p>Con las siguientes tarjetas de credito tenes hasta 36 cuotas sin interes en todos nuestros vehiculos con entrega inmediata</p>
+<br>
+<br>
+<br>
+
+<img src="bbva.jpg" alt="bbva" class="imgbbva">
+<img src="santander.jpg" alt="santander" class="imgsantander">
+<img src="galicia.jpg" alt="galicia" class="imggalicia">
+<br>
+<br>
+<p><a href=”url”>Ver Terminos y Condiciones</a></p>
+</div>
+    
+
+    
+    </section>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <footer class="ultimo">
+    <p class="par">Direccion: Hipolito Irigoyen 3558</p>
+    <p class="par">Tel: 2235327865</p>
+    <p class="par">Correo electronico: automarket@gmail.com</a></p>
+  </footer>
+
+    </header>
+<section>
+
+
+</section>
+
+</body>
+
+</html>
